@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import logger from 'morgan';
 import cors from 'cors';
 
+import users from './users/index'
 
 const app = express();
 const port = process.env.PORT || 3000;
