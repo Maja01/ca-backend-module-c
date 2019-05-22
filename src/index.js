@@ -4,11 +4,12 @@ import helmet from 'helmet';
 import logger from 'morgan';
 import cors from 'cors';
 
-import users from './users/index'
+import indexRouter from './index/router';
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(indexRouter);
 app.use(logger('dev'));
 app.use(cors());
 app.use(helmet()); // helps you secure your Express apps by setting various HTTP headers
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));  // basically tells the system whether you want to use a simple algorithm for shallow parsing (i.e. false) or complex algorithm for deep parsing that can deal with nested objects (i.e. true).
 app.use(bodyParser.json()); // basically tells the system that you want json to be used
+
 
 app.listen(port, () => {
   console.log(`API Server is listening on ${port}`);

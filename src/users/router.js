@@ -2,7 +2,7 @@ import { Router } from 'express';
 import users from './actions';
 
 const userRouter = Router();
-console.log(users);
+// console.log(users);
 
 userRouter.get('/users', users.list)
 userRouter.get('/users/:id', users.get);
@@ -14,3 +14,5 @@ userRouter.get('/users/:id', users.get);
 // userRouter.get('/users', async function get(req, res, next) {
 //   await next;
 // })
+
+export default userRouter;

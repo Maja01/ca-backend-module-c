@@ -1,7 +1,7 @@
 import urlsConfigs from '../../config/urls';
 const Y = require("../../config/urls");
 
-console.log('configs', urlsConfigs['stagin']);
+// console.log('configs', urlsConfigs['stagin']);
 const json = {
 
 }
@@ -12,7 +12,7 @@ const urlConfig = urlsConfigs['dev'];
 
 const { users } = urlConfig;
 // console.log(users1);
-console.log(users);
+// console.log(users);
 
 
 
@@ -39,7 +39,7 @@ const dev = {
 
 // console.log('DEVVVVVVVVV', dev);
 // console.log('Url configs', urlsConfigs);
-console.log('config', urlConfig);
+// console.log('config', urlConfig);
 const array = ["asdas", "Asdas", "Asdas"]
 // const url = "https://jsonplaceholder.typicode.com/users"
 // const arr1 = [];
@@ -55,6 +55,3 @@ export default {
   list,
   get,
 };
-
-
-
